@@ -1,16 +1,9 @@
 import { Routes } from "@angular/router";
+import { ArticlesComponent } from "./articles/articles.component";
 
 export const routes: Routes = [
     {
         path: "",
-        // component: 
+        component: ArticlesComponent
     },
-    {
-        path:"article/:id",
-        // canActivate: 
-        // component
-    },
-    {
-        path:"**",
-    }
 ]

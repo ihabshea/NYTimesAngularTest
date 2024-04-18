@@ -2,10 +2,10 @@ export interface Article {
     section: string;
     title: string;
     abstract: string;
-    byLine: string;
+    byline: string;
     multimedia: Multimedia[];
 }
-interface Multimedia {
+export interface Multimedia {
     url: string;
     format: string;
     height: number;

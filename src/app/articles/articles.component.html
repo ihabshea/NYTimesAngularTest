@@ -1,0 +1,15 @@
+<mat-card *ngFor="let article of articles$ | async">
+    <mat-card-header>
+        <div mat-card-avatar setBackgroundImage [imageUrl]="article.multimedia | pickThumbnnail"></div>
+
+        <mat-card-title>{{article.title}}</mat-card-title>
+        <mat-card-subtitle *ngIf="article.byline">{{article.byline}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image width="150" height="150" src="{{article.multimedia | pickThumbnnail}}" />
+        <mat-card-content>
+            <p>
+             {{article.abstract}}
+            </p>
+          </mat-card-content>
+
+        </mat-card>
